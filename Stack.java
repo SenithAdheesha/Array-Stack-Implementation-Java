@@ -20,4 +20,11 @@ public class Stack {
         return tos == data.length - 1;
     }
 
+    public void push(int v){
+        if (isFull()){
+            System.out.println("Stack is Full");
+        }else {
+            data[++tos] = v;
+        }
+    }
 }
