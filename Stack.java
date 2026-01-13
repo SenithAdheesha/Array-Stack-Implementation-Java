@@ -22,9 +22,18 @@ public class Stack {
 
     public void push(int v){
         if (isFull()){
-            System.out.println("Stack is Full");
+            System.out.println("Overflow Error");
         }else {
             data[++tos] = v;
+        }
+    }
+
+    public int pop(){
+        if(isEmpty()){
+            System.out.println("Underflow Error");
+            return -1;
+        }else{
+            return data[tos--];
         }
     }
 }

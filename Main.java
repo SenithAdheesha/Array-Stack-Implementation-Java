@@ -2,6 +2,10 @@ public class Main {
 
     public static void main(String [] args){
        Stack stack = new Stack();
-        System.out.print(stack.isEmpty());
+       stack.push(5);
+       stack.push(10);
+       System.out.println(stack.pop());
+       System.out.println(stack.pop());
+       System.out.println(stack.isEmpty());
     }
 }
