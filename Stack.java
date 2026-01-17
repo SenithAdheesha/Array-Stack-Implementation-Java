@@ -36,4 +36,13 @@ public class Stack {
             return data[tos--];
         }
     }
+
+    public int peek(){
+        if(isEmpty()){
+            System.out.println("Stack is Empty");
+            return -1;
+        }else{
+            return data[tos];
+        }
+    }
 }
