@@ -4,8 +4,11 @@ public class Main {
        Stack stack = new Stack();
        stack.push(5);
        stack.push(10);
-       System.out.println(stack.pop());
-       System.out.println(stack.pop());
+       stack.push(20);
+       stack.pop();
+       
+       stack.printAll();
        System.out.println(stack.isEmpty());
+       
     }
 }

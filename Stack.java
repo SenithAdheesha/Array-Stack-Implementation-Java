@@ -39,10 +39,22 @@ public class Stack {
 
     public int peek(){
         if(isEmpty()){
-            System.out.println("Stack is Empty");
+            System.out.println("Underflow Error");
             return -1;
         }else{
             return data[tos];
+        }
+    }
+
+    public void printAll(){
+        if(isEmpty()){
+            System.out.println("Underflow Error");
+        }else{
+            int temp = tos;
+            while (temp >= 0) {
+                System.out.println(data[temp]);
+                temp --;                
+            }
         }
     }
 }
